@@ -1,0 +1,22 @@
+{
+  "name": "vorozhbit/brackets-console",
+  "description": "Console app for checking string for open/closing brackets",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrey Vorozhbit",
+      "email": "andrey.vorozhbit@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "vorozhbit/brackets-check": "dev-master",
+    "symfony/console": "^3.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  }
+}
