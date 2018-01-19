@@ -32,6 +32,10 @@ class CheckBracketsCommand extends Command
         }
 
         $str = file_get_contents($file);
+        if(!$str){
+            $output->writeln('Could not get file contents!');
+            return false;
+        }
 
         try{
             if($checker->check($str)){
